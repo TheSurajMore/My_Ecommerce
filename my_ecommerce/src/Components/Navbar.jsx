@@ -17,7 +17,7 @@ import {
   Center,
   Heading,
 } from '@chakra-ui/react';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { MoonIcon, SunIcon, Search2Icon, InfoIcon } from '@chakra-ui/icons';
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -41,14 +41,14 @@ export default function Navbar() {
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Box>My E-Commerce Project</Box>
+
           <Box><Heading>Suraj More</Heading></Box>
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
-              <Button onClick={toggleColorMode}>
+            <Button onClick={toggleColorMode}>   
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-              </Button>
-
+            </Button>
               {/* <Menu>
                 <MenuButton
                   as={Button}
@@ -80,8 +80,10 @@ export default function Navbar() {
                   <MenuItem>Logout</MenuItem>
                 </MenuList>
               </Menu> */}
+              <Search2Icon></Search2Icon>
               <Button colorScheme='blue' size='sm'>Login</Button>
               <Button colorScheme='blue' size='sm'>SignUp</Button>
+              <Link color={'green'} fontWeight='bold'><InfoIcon/> About Project</Link>
             </Stack>
           </Flex>
         </Flex>
