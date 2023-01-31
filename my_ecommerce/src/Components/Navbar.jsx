@@ -18,6 +18,7 @@ import {
   Heading,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon, Search2Icon, InfoIcon } from '@chakra-ui/icons';
+import {BsFillCartPlusFill} from 'react-icons/bs'
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -80,10 +81,10 @@ export default function Navbar() {
                   <MenuItem>Logout</MenuItem>
                 </MenuList>
               </Menu> */}
-              <Search2Icon></Search2Icon>
-              <Button colorScheme='blue' size='sm'>Login</Button>
-              <Button colorScheme='blue' size='sm'>SignUp</Button>
-              <Link color={'green'} fontWeight='bold'><InfoIcon/> About Project</Link>
+              <Search2Icon alignSelf={'center'}></Search2Icon>
+              <Link alignSelf={'center'}><BsFillCartPlusFill size={'30px'} ></BsFillCartPlusFill></Link>
+              <Button colorScheme='blue' size='sm' alignSelf={'center'}>Login</Button>
+              <Link color={'green'} fontWeight='bold' alignSelf={'center'}><InfoIcon alignSelf={'center'} /> About Project</Link>
             </Stack>
           </Flex>
         </Flex>
