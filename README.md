@@ -40,7 +40,7 @@
 <p> 10) Importing navbar template from Chakra UI.
 <p> 11) Login button created. 
 <p> 12) Created about link. 
-<p> 13) Cart logo added.
+<p> 13) React icon library Installed and Cart logo added.
 <p> 14) Search logo added. 
 <p> 15) My name and title added. 
 <p> 16) First issue completed. 
