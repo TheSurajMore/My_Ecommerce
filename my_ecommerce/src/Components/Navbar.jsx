@@ -1,42 +1,33 @@
-import { ReactNode } from 'react';
 import {
   Box,
   Flex,
-  Avatar,
   Link,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
-  useDisclosure,
   useColorModeValue,
   Stack,
   useColorMode,
-  Center,
   Heading,
 } from '@chakra-ui/react';
-import { MoonIcon, SunIcon, Search2Icon, InfoIcon } from '@chakra-ui/icons';
-import {BsFillCartPlusFill} from 'react-icons/bs'
+import { SunIcon, Search2Icon, InfoIcon } from '@chakra-ui/icons';
+import {BsFillCartPlusFill, BsMoon,} from 'react-icons/bs'
 
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-    href={'#'}>
-    {children}
-  </Link>
-);
+// const NavLink = ({ children }: { children: ReactNode }) => (
+//   <Link
+//     px={2}
+//     py={1}
+//     rounded={'md'}
+//     _hover={{
+//       textDecoration: 'none',
+//       bg: useColorModeValue('gray.200', 'gray.700'),
+//     }}
+//     href={'#'}>
+//     {children}
+//   </Link>
+// );
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
@@ -48,7 +39,7 @@ export default function Navbar() {
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
             <Button onClick={toggleColorMode}>   
-                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                {colorMode === 'light' ? <BsMoon size={'27px'} /> : <SunIcon/>}
             </Button>
               {/* <Menu>
                 <MenuButton
