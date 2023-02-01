@@ -30,7 +30,7 @@
 <p> 1) Created My_Ecommerce repository in github. 
 <p> 2) Clone repository in vs code. 
 <p> 3) Created My E-Commerce project in github.  
-<p> 4) Created first Issue navbar with following tasks. 
+<p> 4) Created first Issue Navbar with following tasks. 
     <p>     - My Name,  E-Commerce title,  Login button, ⓘ About Project, Search Icon, Cart Icon. </p>
 <p> 5) In My E-Commerce project board in github, Taking first issue Navbar in progress.
 <p> 6) Created a new branch "Navbar" in My_Ecommerce repository.
