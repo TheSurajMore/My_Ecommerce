@@ -7,7 +7,6 @@ import {
   Stack,
   useColorMode,
   Heading,
-  Spacer,
 } from '@chakra-ui/react';
 import { SunIcon, Search2Icon, InfoIcon } from '@chakra-ui/icons';
 import {BsFillCartPlusFill, BsMoon,} from 'react-icons/bs'

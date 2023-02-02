@@ -21,12 +21,15 @@ const About = () => {
     <a href="https://chakra-ui.com/getting-started" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true" alt="Chakra UI" width="80" height="50"/> </a> 
       <Spacer/>
       <a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noreferrer"> <img src="https://static.javatpoint.com/tutorial/reactjs/images/react-icons.png" alt="React-Icon" width="90" height="50"/> </a> 
+  <Spacer/>
+  <a href="https://reactrouter.com/en/main" target="_blank" rel="noreferrer"> <img src="https://miro.medium.com/max/1200/1*sX8rBJBol5dBp5WIJQrYyw.png" alt="React Router" width="90" height="50"/> </a> 
 </Flex>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 <Heading align='left' ml={'1%'}  mt={'1%'} as={'h3'} size={'md'} > Step by step procedure to explore all functionalities of this project :</Heading>
 <div align='left' >
 <Text>1) After landing on this website users can switch between dark and light mode by clicking on moon ☾ icon available in navbar.</Text>
 <p>2) User can get all information about this project by clicking on “ⓘ About Project” link available in Navbar.</p>
+<p>3) Users can go back to the home page by clicking on the home icon present in the navbar.</p>
 </div>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' > Functionalities and their methods of creation :</Heading>
@@ -40,6 +43,7 @@ const About = () => {
 <p> 1) Chakra UI </p>
 <p> 2) Chakra UI / Icons </p>
 <p> 3) React icons </p>
+<p> 4) React Router DOM</p>
 </div>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' > My Workflow during creation of this project :</Heading>
@@ -61,6 +65,8 @@ const About = () => {
 <p> 14) Search logo added. </p>
 <p> 15) My name and title added. </p>
 <p> 16) First issue completed. </p>
+<p> 17) React Router DOM installed.</p>
+<p> 18) React Router DOM applied.</p>
 </div>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 <Heading align='left' ml={'1%'} > Thank you for visiting my project ! </Heading>
