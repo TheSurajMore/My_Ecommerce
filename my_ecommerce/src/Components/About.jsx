@@ -1,8 +1,9 @@
-import { Heading, Divider, Flex, Spacer, Text } from "@chakra-ui/react";
+import { Heading, Divider, Flex, Spacer, Text, Badge } from "@chakra-ui/react";
 import React from "react";
 const About = () => {
     return(
      <>
+       <p align='left' ><Badge variant='solid' colorScheme='green'  >surajmbusiness@gmail.com</Badge></p>
     <Heading ml={'1%'} align="left" mt={'2%'}>Hello 👋, Welcome to my E-commerce project</Heading>
 
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />

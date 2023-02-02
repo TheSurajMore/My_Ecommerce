@@ -7,10 +7,12 @@ import {
   Stack,
   useColorMode,
   Heading,
+  Spacer,
 } from '@chakra-ui/react';
 import { SunIcon, Search2Icon, InfoIcon } from '@chakra-ui/icons';
 import {BsFillCartPlusFill, BsMoon,} from 'react-icons/bs'
 import {HiOutlineHome} from 'react-icons/hi'
+import {Link as RouteLink} from 'react-router-dom'
 
 // const NavLink = ({ children }: { children: ReactNode }) => (
 //   <Link
@@ -73,11 +75,11 @@ export default function Navbar() {
                   <MenuItem>Logout</MenuItem>
                 </MenuList>
               </Menu> */}
-              <Link alignSelf={'center'} ><HiOutlineHome alignSelf={'center'} size={'30px'} ></HiOutlineHome></Link>
-              <Search2Icon alignSelf={'center'} boxSize={6} ></Search2Icon>
-              <Link alignSelf={'center'}><BsFillCartPlusFill size={'30px'} ></BsFillCartPlusFill></Link>
-              <Button colorScheme='blue' size='sm' alignSelf={'center'}>Login</Button>
-              <Link color={'green'} fontWeight='bold' alignSelf={'center'}><InfoIcon alignSelf={'center'} boxSize={6} /> About Project</Link>
+              <Box alignSelf={'center'} ><RouteLink to={'/'}><HiOutlineHome size={'30px'}></HiOutlineHome></RouteLink></Box>
+              <Box alignSelf={'center'} ><Search2Icon  boxSize={6} ></Search2Icon></Box>
+              <Box alignSelf={'center'}><Link ><BsFillCartPlusFill size={'30px'} ></BsFillCartPlusFill></Link></Box>
+              <Box alignSelf={'center'}><Button colorScheme='blue' size='sm' >Login</Button></Box>
+              <Box alignSelf={'center'} color='green' fontWeight={'bold'} ><RouteLink to={'/About'}><InfoIcon boxSize={6} /> About Project</RouteLink></Box>
             </Stack>
           </Flex>
         </Flex>
