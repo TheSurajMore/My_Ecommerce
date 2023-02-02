@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { SunIcon, Search2Icon, InfoIcon } from '@chakra-ui/icons';
 import {BsFillCartPlusFill, BsMoon,} from 'react-icons/bs'
+import {HiOutlineHome} from 'react-icons/hi'
 
 // const NavLink = ({ children }: { children: ReactNode }) => (
 //   <Link
@@ -30,7 +31,7 @@ export default function Navbar() {
   // const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Box>My E-Commerce Project</Box>
 
@@ -72,10 +73,11 @@ export default function Navbar() {
                   <MenuItem>Logout</MenuItem>
                 </MenuList>
               </Menu> */}
-              <Search2Icon alignSelf={'center'}></Search2Icon>
+              <Link alignSelf={'center'} ><HiOutlineHome alignSelf={'center'} size={'30px'} ></HiOutlineHome></Link>
+              <Search2Icon alignSelf={'center'} boxSize={6} ></Search2Icon>
               <Link alignSelf={'center'}><BsFillCartPlusFill size={'30px'} ></BsFillCartPlusFill></Link>
               <Button colorScheme='blue' size='sm' alignSelf={'center'}>Login</Button>
-              <Link color={'green'} fontWeight='bold' alignSelf={'center'}><InfoIcon alignSelf={'center'} /> About Project</Link>
+              <Link color={'green'} fontWeight='bold' alignSelf={'center'}><InfoIcon alignSelf={'center'} boxSize={6} /> About Project</Link>
             </Stack>
           </Flex>
         </Flex>
