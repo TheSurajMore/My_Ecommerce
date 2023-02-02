@@ -4,25 +4,25 @@ const About = () => {
     return(
      <>
        <p align='left' ><Badge variant='solid' colorScheme='green'  >surajmbusiness@gmail.com</Badge></p>
-    <Heading ml={'1%'} align="left" mt={'2%'}>Hello 👋, Welcome to my E-commerce project</Heading>
+       <Heading ml={'1%'} align="left" mt={'2%'}>Hello 👋, Welcome to my E-commerce project</Heading>
 
-<Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
+      <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 
-< Heading ml={'1%'} as={'h3'} size='md' mt={'1%'} align="left">Technologies and Tools used in this project :</Heading>
+      < Heading ml={'1%'} as={'h3'} size='md' mt={'1%'} align="left">Technologies and Tools used in this project :</Heading>
 <Flex mt={'1%'} align={'center'} >
    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML" width="40" height="40"/> </a> 
-  <Spacer/>
- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS" width="40" height="40"/> </a> 
-<Spacer/>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/> </a> 
- <Spacer/>
-  <a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="40" height="40"/> </a> 
- <Spacer/>
-    <a href="https://chakra-ui.com/getting-started" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true" alt="Chakra UI" width="80" height="50"/> </a> 
-      <Spacer/>
-      <a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noreferrer"> <img src="https://static.javatpoint.com/tutorial/reactjs/images/react-icons.png" alt="React-Icon" width="90" height="50"/> </a> 
-  <Spacer/>
-  <a href="https://reactrouter.com/en/main" target="_blank" rel="noreferrer"> <img src="https://miro.medium.com/max/1200/1*sX8rBJBol5dBp5WIJQrYyw.png" alt="React Router" width="90" height="50"/> </a> 
+   <Spacer/>
+   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS" width="40" height="40"/> </a> 
+   <Spacer/>
+   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/> </a> 
+   <Spacer/>
+   <a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="40" height="40"/> </a> 
+   <Spacer/>
+   <a href="https://chakra-ui.com/getting-started" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true" alt="Chakra UI" width="80" height="50"/> </a> 
+   <Spacer/>
+   <a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noreferrer"> <img src="https://static.javatpoint.com/tutorial/reactjs/images/react-icons.png" alt="React-Icon" width="90" height="50"/> </a> 
+   <Spacer/>
+   <a href="https://reactrouter.com/en/main" target="_blank" rel="noreferrer"> <img src="https://miro.medium.com/max/1200/1*sX8rBJBol5dBp5WIJQrYyw.png" alt="React Router" width="90" height="50"/> </a> 
 </Flex>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 <Heading align='left' ml={'1%'}  mt={'1%'} as={'h3'} size={'md'} > Step by step procedure to explore all functionalities of this project :</Heading>
