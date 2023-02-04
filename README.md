@@ -5,13 +5,15 @@
 
 <h3 align="left">Technologies and Tools used in this project :</h3>
 <p align="left"> 
-   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML" width="40" height="40"/> </a> 
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML" width="40" height="40"/> </a> 
   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS" width="40" height="40"/> </a> 
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/> </a> 
   <a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React" width="40" height="40"/> </a> 
-    <a href="https://chakra-ui.com/getting-started" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true" alt="Chakra UI" width="80" height="40"/> </a> 
-      <a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noreferrer"> <img src="https://static.javatpoint.com/tutorial/reactjs/images/react-icons.png" alt="React-Icon" width="90" height="40"/> </a> 
-      <a href="https://reactrouter.com/en/main" target="_blank" rel="noreferrer"> <img src="https://miro.medium.com/max/1200/1*sX8rBJBol5dBp5WIJQrYyw.png" alt="React Router" width="90" height="40"/> </a>
+  <a href="https://chakra-ui.com/getting-started" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true" alt="Chakra UI" width="80" height="40"/> </a> 
+  <a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noreferrer"> <img src="https://static.javatpoint.com/tutorial/reactjs/images/react-icons.png" alt="React-Icon" width="90" height="40"/> </a> 
+  <a href="https://reactrouter.com/en/main" target="_blank" rel="noreferrer"> <img src="https://miro.medium.com/max/1200/1*sX8rBJBol5dBp5WIJQrYyw.png" alt="React Router" width="90" height="40"/> </a>
+  <a href="https://axios-http.com/docs/intro" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/272811d860f3fab0dd8ff0690e2ca36afbf0c96ad44100b8d42dfdce8511679b/68747470733a2f2f6178696f732d687474702e636f6d2f6173736574732f6c6f676f2e737667" alt="Axios" width="90" height="40"/> </a>
+   <a href="https://fakestoreapi.com/" target="_blank" rel="noreferrer"> <img src="https://fakestoreapi.com/icons/logo.png" alt="Fake Store API" width="40" height="40"/> </a>         
 </p>
 <hr/>
 <h3> Step by step procedure to explore all functionalities of this project :</h3>
