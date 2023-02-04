@@ -16,16 +16,16 @@
    <a href="https://fakestoreapi.com/" target="_blank" rel="noreferrer"> <img src="https://fakestoreapi.com/icons/logo.png" alt="Fake Store API" width="40" height="40"/> </a>         
 </p>
 <hr/>
-<h3> Step by step procedure to explore all functionalities of this project :</h3>
-<p>1) After landing on this website users can switch between dark and light mode by clicking on moon ☾ icon available in navbar.</p>
-<p>2) User can get all information about this project by clicking on “ⓘ About Project” link available in Navbar.</p>
-<p>3) Users can go back to the home page by clicking on the home icon present in the navbar.</p>
+<h3> Step-by-step procedure to explore all functionalities of this project :</h3>
+<p>1) After landing on this website users can switch between dark and light modes by clicking on the moon ☾ icon available in the navbar.</p>
+<p>2) Users can get all information about this project by clicking on the “ⓘ About Project” link available in Navbar.</p>
+<p>3) Anytime user can go back to the home page by clicking on the home icon present in the navbar.</p>
 <p>4) Below Navbar, we can see the products available to purchase. </p>
 <hr/>
 <h3> Functionalities and their methods of creation :</h3>
-<p>1) This complete website is a responsive design = I am using chakra UI library such that its built-in responsiveness is not disturbing.</p> 
-<p>2) Users can Switch between dark / light mode from the navbar = I used Navbar from the Chakra UI library which has this dark / light mode functionality.</p>
-<p>3) Products are available on home page for buy or add to cart = All products are mapped on home page form dummy data base named as fakestoreapi.</p>
+<p>1) This complete website is a responsive design =  I added responsiveness to this website by using chakra UI.</p> 
+<p>2) Users can Switch between dark/light mode from the navbar = I used Navbar from the Chakra UI library which has this dark/light mode functionality.</p>
+<p>3) Products are available on the home page for buy or add to cart = All products are mapped on the home page from a dummy database <a href="https://fakestoreapi.com/"> Fake Store API. </a></p>
 <hr/>
 <h3>Dependencies / libraries used in this project :</h3>
 <p> 1) Chakra UI </p>
