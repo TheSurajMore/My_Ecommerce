@@ -25,12 +25,19 @@
 <h3> Functionalities and their methods of creation :</h3>
 <p>1) This complete website is a responsive design = I am using chakra UI library such that its built-in responsiveness is not disturbing.</p> 
 <p>2) Users can Switch between dark / light mode from the navbar = I used Navbar from the Chakra UI library which has this dark / light mode functionality.</p>
+<p>3) Products are available on home page for buy or add to cart = All products are mapped on home page form dummy data base named as fakestoreapi.</p>
 <hr/>
 <h3>Dependencies / libraries used in this project :</h3>
 <p> 1) Chakra UI </p>
 <p> 2) Chakra UI / Icons </p>
 <p> 3) React icons </p>
 <p> 4) React Router DOM </p>
+<p> 5) Axios </p>
+<hr/>
+<h3>GitHub Branches</h3>
+<p>Main</p> 
+<p>Navbar</p>
+<p>Landing Page</p> 
 <hr/>
 <h3>My Workflow during creation of this project :</h3>
 <p> 1) Created My_Ecommerce repository in github. 
@@ -52,5 +59,10 @@
 <p> 16) First issue completed. 
 <p> 17) React Router DOM installed. 
 <p> 18) React Router DOM applied.
+<p> 19) React router applied
+<p> 20) Creating the Landing Page branch in GitHub and I started working on it. 
+<p> 21) Axios installed
+<p> 22) Mapped all products on the home screen using https://fakestoreapi.com/
+<p> 23) Adding buy now and add to cart buttons. 
 <hr/>
 <h1> Thank you for visiting my project ! </h1>
