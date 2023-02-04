@@ -35,19 +35,31 @@
 <p> 5) Axios </p>
 <hr/>
 <h3>GitHub Branches</h3>
-<p>Main</p> 
-<p>Navbar</p>
-<p>Landing Page</p> 
+<p>1) Main</p> 
+<p>2) Navbar</p>
+<p>3) Landing Page</p> 
 <hr/>
-<h3>My Workflow during creation of this project :</h3>
-<p> 1) Created My_Ecommerce repository in github. 
-<p> 2) Clone repository in vs code. 
-<p> 3) Created My E-Commerce project in github.  
-<p> 4) Created first Issue Navbar with following tasks. 
-    <p>     - My Name,  E-Commerce title,  Login button, ⓘ About Project, Search Icon, Cart Icon. </p>
-<p> 5) In My E-Commerce project board in github, Taking first issue Navbar in progress.
-<p> 6) Created a new branch "Navbar" in My_Ecommerce repository.
-<p> 7) Now starting working on the first issue in Navbar branch. 
+<h3>Issue and Task created and completed on GitHub.</h3>
+<p>1) Navbar issue with following tasks.
+   <p>          - [ ] My Name,  
+   <p>       - [ ] E-Commerce title, 
+   <p>          - [ ] Login button, 
+   <p>          - [ ] ⓘ About Project, 
+   <p>          - [ ] Search Icon, 
+   <p>          - [ ] Cart Icon.
+<p>2) Landing Page issue with following tasks. 
+   <p> - [ ] Append Products
+   <p> - [ ] Add Buttons 
+<hr/>
+<h3>My Workflow during the creation of this project :</h3>
+<p> 1) Created My_Ecommerce repository in GitHub. 
+<p> 2) Cloned repository in vs code. 
+<p> 3) Created My E-Commerce project in GitHub.  
+<p> 4) Created the first Issue Navbar with the following tasks 
+    <p>     - My Name,  E-Commerce title,  Login button, ⓘ About Project, Search Icon, Cart Icon.  </p>
+<p> 5) In My E-Commerce project board in GitHub, Took the first issue Navbar in progress.
+<p> 6) Created a new branch "Navbar" in the My_Ecommerce repository.
+<p> 7) Now started working on the first issue in the Navbar branch. 
 <p> 8) Installed Chakra UI library. 
 <p> 9) Installed Chakra UI Icon library.  
 <p> 10) Importing navbar template from Chakra UI.
@@ -55,14 +67,14 @@
 <p> 12) Created about project link. 
 <p> 13) React icon library Installed and Cart logo added.
 <p> 14) Search logo added. 
-<p> 15) My name and title added. 
-<p> 16) First issue completed. 
+<p> 15) My name and title were added. 
+<p> 16) First issue is completed. 
 <p> 17) React Router DOM installed. 
 <p> 18) React Router DOM applied.
-<p> 19) React router applied
-<p> 20) Creating the Landing Page branch in GitHub and I started working on it. 
-<p> 21) Axios installed
-<p> 22) Mapped all products on the home screen using https://fakestoreapi.com/
-<p> 23) Adding buy now and add to cart buttons. 
+<p> 19) React router applied.
+<p> 20) Creating the Landing Page branch in GitHub and started working on it. 
+<p> 21) Axios installed.
+<p> 22) Mapped all products on the home screen using <a target="_blank" href="https://fakestoreapi.com/"> Fake Store API</a>. 
+<p> 23) Buy now and add to cart buttons were added. 
 <hr/>
 <h1> Thank you for visiting my project ! </h1>
