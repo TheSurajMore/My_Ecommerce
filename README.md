@@ -20,6 +20,7 @@
 <p>1) After landing on this website users can switch between dark and light mode by clicking on moon ☾ icon available in navbar.</p>
 <p>2) User can get all information about this project by clicking on “ⓘ About Project” link available in Navbar.</p>
 <p>3) Users can go back to the home page by clicking on the home icon present in the navbar.</p>
+<p>4) Below Navbar, we can see the products available to purchase. </p>
 <hr/>
 <h3> Functionalities and their methods of creation :</h3>
 <p>1) This complete website is a responsive design = I am using chakra UI library such that its built-in responsiveness is not disturbing.</p> 
