@@ -8,37 +8,57 @@ import {
     Input,
     Button,
     SimpleGrid,
-    Avatar,
-    AvatarGroup,
     useBreakpointValue,
     IconProps,
     Icon,
   } from '@chakra-ui/react';
+import { useContext, useState } from 'react';
+import { AuthenticationContext } from '../Contexts/Authentication';
   
-  const avatars = [
-    {
-      name: 'Ryan Florence',
-      url: 'https://bit.ly/ryan-florence',
-    },
-    {
-      name: 'Segun Adebayo',
-      url: 'https://bit.ly/sage-adebayo',
-    },
-    {
-      name: 'Kent Dodds',
-      url: 'https://bit.ly/kent-c-dodds',
-    },
-    {
-      name: 'Prosper Otemuyiwa',
-      url: 'https://bit.ly/prosper-baba',
-    },
-    {
-      name: 'Christian Nwamba',
-      url: 'https://bit.ly/code-beast',
-    },
-  ];
+  // const avatars = [
+  //   {
+  //     name: 'Ryan Florence',
+  //     url: 'https://bit.ly/ryan-florence',
+  //   },
+  //   {
+  //     name: 'Segun Adebayo',
+  //     url: 'https://bit.ly/sage-adebayo',
+  //   },
+  //   {
+  //     name: 'Kent Dodds',
+  //     url: 'https://bit.ly/kent-c-dodds',
+  //   },
+  //   {
+  //     name: 'Prosper Otemuyiwa',
+  //     url: 'https://bit.ly/prosper-baba',
+  //   },
+  //   {
+  //     name: 'Christian Nwamba',
+  //     url: 'https://bit.ly/code-beast',
+  //   },
+  // ];
+
+// Suraj More  React projects
   
   export default function Login() {
+    const {Login} = useContext(AuthenticationContext)
+    const [user_ID, setuser_ID] = useState('');
+    const [Password, setPassword] = useState('');
+    const Handleuser_ID = (e) =>{
+      setuser_ID(e.target.value);
+    }
+    console.log(user_ID);
+    const HandlePassword = (e) =>{
+      setPassword(e.target.value);
+    }
+    console.log(Password);
+    const HandleSubmit = () =>{
+      if(user_ID==='Suraj More' && Password==='React projects'){
+        Login();
+      }else{
+        alert('Please enter the correct Username and Password mentioned in the green section.')
+      }
+    }
     return (
       <Box position={'relative'}>
         <Container
@@ -51,17 +71,46 @@ import {
             <Heading
               lineHeight={1.1}
               fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl' }}>
-              Senior web designers{' '}
+              <Flex
+                align={'center'}
+                justify={'center'}
+                fontFamily={'heading'}
+                fontSize={{ base: 'sm', md: 'lg' }}
+                bg={'gray.800'}
+                color={'white'}
+                rounded={'full'}
+                minWidth={useBreakpointValue({ base: '44px', md: '60px' })}
+                minHeight={useBreakpointValue({ base: '44px', md: '60px' })}
+                position={'relative'}
+                _before={{
+                  content: '""',
+                  width: 'full',
+                  height: 'full',
+                  rounded: 'full',
+                  transform: 'scale(1.125)',
+                  bgGradient: 'linear(to-bl, green.400,blue.400)',
+                  position: 'absolute',
+                  zIndex: -1,
+                  top: 0,
+                  left: 0,
+                }}>
+                IMPORTANT
+              </Flex>
+              Use only following username{' '}
               <Text
                 as={'span'}
                 bgGradient="linear(to-r, green.400,blue.400)"
                 bgClip="text">
                 &
               </Text>{' '}
-              Full-Stack Developers
+              password available in green section
             </Heading>
-            <Stack direction={'row'} spacing={4} align={'center'}>
-              <AvatarGroup>
+            <Box bg={'green'} fontWeight='bold' borderRadius={100}>
+              <Text> Username = Suraj More </Text>
+              <Text> Password = React projects </Text>
+            </Box>
+            {/* <Stack direction={'row'} spacing={4} align={'center'}> */}
+              {/* <AvatarGroup>
                 {avatars.map((avatar) => (
                   <Avatar
                     key={avatar.name}
@@ -87,8 +136,8 @@ import {
               </AvatarGroup>
               <Text fontFamily={'heading'} fontSize={{ base: '4xl', md: '6xl' }}>
                 +
-              </Text>
-              <Flex
+              </Text> */}
+              {/* <Flex
                 align={'center'}
                 justify={'center'}
                 fontFamily={'heading'}
@@ -112,8 +161,8 @@ import {
                   left: 0,
                 }}>
                 YOU
-              </Flex>
-            </Stack>
+              </Flex> */}
+            {/* </Stack> */}
           </Stack>
           <Stack
             bg={'gray.50'}
@@ -126,7 +175,7 @@ import {
                 color={'gray.800'}
                 lineHeight={1.1}
                 fontSize={{ base: '2xl', sm: '3xl', md: '4xl' }}>
-                Join our team
+                Login and enjoy "Buy" and "Add to Cart 🛒 " functionalities
                 <Text
                   as={'span'}
                   bgGradient="linear(to-r, green.400,blue.400)"
@@ -134,10 +183,10 @@ import {
                   !
                 </Text>
               </Heading>
-              <Text color={'gray.500'} fontSize={{ base: 'sm', sm: 'md' }}>
+              {/* <Text color={'gray.500'} fontSize={{ base: 'sm', sm: 'md' }}>
                 We’re looking for amazing engineers just like you! Become a part
                 of our rockstar engineering team and skyrocket your career!
-              </Text>
+              </Text> */}
             </Stack>
             <Box as={'form'} mt={10}>
               <Stack spacing={4}>
@@ -149,8 +198,11 @@ import {
                   _placeholder={{
                     color: 'gray.500',
                   }}
+                  value={user_ID}
+                  onChange={Handleuser_ID}
                 />
                 <Input
+                  type={'password'}
                   placeholder="firstname@lastname.io"
                   bg={'gray.100'}
                   border={0}
@@ -158,6 +210,8 @@ import {
                   _placeholder={{
                     color: 'gray.500',
                   }}
+                  value={Password}
+                  onChange={HandlePassword}
                 />
                 {/* <Input
                   placeholder="+1 (___) __-___-___"
@@ -181,7 +235,9 @@ import {
                 _hover={{
                   bgGradient: 'linear(to-r, green.400,blue.400)',
                   boxShadow: 'xl',
-                }}>
+                }}
+                onClick={HandleSubmit}
+                >
                 Submit
               </Button>
             </Box>
