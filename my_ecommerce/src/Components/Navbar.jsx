@@ -10,7 +10,7 @@ import {
 import { SunIcon, Search2Icon, InfoIcon } from '@chakra-ui/icons';
 import {BsFillCartPlusFill, BsMoon,} from 'react-icons/bs'
 import {HiOutlineHome} from 'react-icons/hi'
-import {Link as RouteLink} from 'react-router-dom'
+import {Link as RouteLink, Navigate} from 'react-router-dom'
 import { useContext } from 'react';
 import { AuthenticationContext } from '../Contexts/Authentication';
 
@@ -29,9 +29,10 @@ import { AuthenticationContext } from '../Contexts/Authentication';
 // );
 
 export default function Navbar() {
-  const {Auth,Logout} = useContext(AuthenticationContext)
+  const {Auth,Logout,Login} = useContext(AuthenticationContext)
   const { colorMode, toggleColorMode } = useColorMode();
   console.log(Auth);
+
   // const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
@@ -80,7 +81,7 @@ export default function Navbar() {
               <Box alignSelf={'center'} ><RouteLink to={'/'}><HiOutlineHome size={'30px'}></HiOutlineHome></RouteLink></Box>
               <Box alignSelf={'center'} ><Search2Icon  boxSize={6} ></Search2Icon></Box>
               <Box alignSelf={'center'}><RouteLink to={'/Cart'} ><BsFillCartPlusFill size={'30px'} ></BsFillCartPlusFill></RouteLink></Box>
-              <Box alignSelf={'center'}><RouteLink to={Auth===false?'/Login':Logout} ><Button onClick={Auth===true?Logout:console.log(Auth)} colorScheme='blue' size='sm' >
+              <Box alignSelf={'center'}><RouteLink to={'/Login'} ><Button onClick={Logout} colorScheme='blue' size='sm' >
                 {Auth===false?"Login":"Logout"}
                 </Button></RouteLink></Box>
               <Box alignSelf={'center'} color='green' fontWeight={'bold'} ><RouteLink to={'/About'}><InfoIcon boxSize={6} /> About Project</RouteLink></Box>
