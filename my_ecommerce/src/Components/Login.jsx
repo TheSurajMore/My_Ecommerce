@@ -13,6 +13,7 @@ import {
     Icon,
   } from '@chakra-ui/react';
 import { useContext, useState } from 'react';
+import { Link, Navigate } from 'react-router-dom';
 import { AuthenticationContext } from '../Contexts/Authentication';
   
   // const avatars = [
@@ -53,7 +54,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
     }
     console.log(Password);
     const HandleSubmit = () =>{
-      if(user_ID==='Suraj More' && Password==='React projects'){
+      if(user_ID==='Suraj More' && Password==='React project'){
         Login();
       }else{
         alert('Please enter the correct Username and Password mentioned in the green section.')
@@ -107,7 +108,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
             </Heading>
             <Box bg={'green'} fontWeight='bold' borderRadius={100}>
               <Text> Username = Suraj More </Text>
-              <Text> Password = React projects </Text>
+              <Text> Password = React project </Text>
             </Box>
             {/* <Stack direction={'row'} spacing={4} align={'center'}> */}
               {/* <AvatarGroup>
@@ -191,10 +192,10 @@ import { AuthenticationContext } from '../Contexts/Authentication';
             <Box as={'form'} mt={10}>
               <Stack spacing={4}>
                 <Input
-                  placeholder="Firstname"
+                  placeholder="Username"
                   bg={'gray.100'}
                   border={0}
-                  color={'gray.500'}
+                  color={'Black'}
                   _placeholder={{
                     color: 'gray.500',
                   }}
@@ -203,10 +204,10 @@ import { AuthenticationContext } from '../Contexts/Authentication';
                 />
                 <Input
                   type={'password'}
-                  placeholder="firstname@lastname.io"
+                  placeholder="Password"
                   bg={'gray.100'}
                   border={0}
-                  color={'gray.500'}
+                  color={'Black'}
                   _placeholder={{
                     color: 'gray.500',
                   }}
@@ -238,7 +239,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
                 }}
                 onClick={HandleSubmit}
                 >
-                Submit
+                Login
               </Button>
             </Box>
             form
