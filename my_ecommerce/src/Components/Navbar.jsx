@@ -10,7 +10,7 @@ import {
 import { SunIcon, Search2Icon, InfoIcon } from '@chakra-ui/icons';
 import {BsFillCartPlusFill, BsMoon,} from 'react-icons/bs'
 import {HiOutlineHome} from 'react-icons/hi'
-import {Link as RouteLink, Navigate} from 'react-router-dom'
+import {Link as RouteLink} from 'react-router-dom'
 import { useContext } from 'react';
 import { AuthenticationContext } from '../Contexts/Authentication';
 
@@ -29,7 +29,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
 // );
 
 export default function Navbar() {
-  const {Auth,Logout,Login} = useContext(AuthenticationContext)
+  const {Auth,Logout} = useContext(AuthenticationContext)
   const { colorMode, toggleColorMode } = useColorMode();
   console.log(Auth);
 
