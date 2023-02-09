@@ -11,9 +11,17 @@ import {
     useBreakpointValue,
     IconProps,
     Icon,
+    useToast,
+    AlertDialogOverlay,
+    AlertDialog,
+    AlertDialogContent,
+    AlertDialogHeader,
+    AlertDialogBody,
+    AlertDialogFooter,
+    useDisclosure,
   } from '@chakra-ui/react';
-import { useContext, useState } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { useContext, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AuthenticationContext } from '../Contexts/Authentication';
   
   // const avatars = [
@@ -42,9 +50,26 @@ import { AuthenticationContext } from '../Contexts/Authentication';
 // Suraj More  React projects
   
   export default function Login() {
-    const {Login} = useContext(AuthenticationContext)
+    const {Login} = useContext(AuthenticationContext);
     const [user_ID, setuser_ID] = useState('');
     const [Password, setPassword] = useState('');
+    const Toast = () =>{
+      toast({
+        title: 'Login Successful !',
+        description: "Enjoy Buy and Add to Cart 🛒 functionalities!",
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      })
+    }
+    const Navi= useNavigate();
+    const toast = useToast()
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const cancelRef = useRef();
+    const HomeLink = () =>{
+      Navi('/')
+      console.log('HomeLink')
+    }
     const Handleuser_ID = (e) =>{
       setuser_ID(e.target.value);
     }
@@ -56,8 +81,11 @@ import { AuthenticationContext } from '../Contexts/Authentication';
     const HandleSubmit = () =>{
       if(user_ID==='Suraj More' && Password==='React project'){
         Login();
+        HomeLink();
+        Toast();
       }else{
-        alert('Please enter the correct Username and Password mentioned in the green section.')
+        onOpen();
+        /* alert('Please enter the correct Username and Password mentioned in the green section.')*/
       }
     }
     return (
@@ -104,7 +132,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
                 bgClip="text">
                 &
               </Text>{' '}
-              password available in green section
+              password
             </Heading>
             <Box bg={'green'} fontWeight='bold' borderRadius={100}>
               <Text> Username = Suraj More </Text>
@@ -251,6 +279,34 @@ import { AuthenticationContext } from '../Contexts/Authentication';
           left={-10}
           style={{ filter: 'blur(70px)' }}
         />
+
+      <AlertDialog
+        isOpen={isOpen}
+        leastDestructiveRef={cancelRef}
+        onClose={onClose}
+      >
+        <AlertDialogOverlay>
+          <AlertDialogContent>
+            <AlertDialogHeader fontSize='lg' fontWeight='bold'>
+            Login Failed
+            </AlertDialogHeader>
+
+            <AlertDialogBody>
+            Please enter the correct Username and Password mentioned in the green section.
+            </AlertDialogBody>
+
+            <AlertDialogFooter>
+              {/* <Button ref={cancelRef} onClick={onClose}>
+                Cancel
+              </Button> */}
+              <Button colorScheme='red' onClick={onClose} ml={3}>
+                OK
+              </Button>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialogOverlay>
+      </AlertDialog>
+
       </Box>
     );
   }
