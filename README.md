@@ -21,11 +21,8 @@
 <p>2) Users can get all information about this project by clicking on the “ⓘ About Project” link available in Navbar.</p>
 <p>3) Anytime user can go back to the home page by clicking on the home icon present in the navbar.</p>
 <p>4) Below Navbar, we can see the products available to purchase. </p>
-<hr/>
-<h3> Functionalities and their methods of creation :</h3>
-<p>1) This complete website is a responsive design =  I added responsiveness to this website by using chakra UI.</p> 
-<p>2) Users can Switch between dark/light mode from the navbar = I used Navbar from the Chakra UI library which has this dark/light mode functionality.</p>
-<p>3) Products are available on the home page for buy or add to cart = All products are mapped on the home page from a dummy database <a target="_blank" href="https://fakestoreapi.com/"> Fake Store API. </a></p>
+<p>5) User can go to the login page using the login button available in the navbar.</p>
+<p>6) Without login users can see products available to purchase but the user cant buy or add to the cart any product without login. </p>
 <hr/>
 <h3>Dependencies / libraries used in this project :</h3>
 <p> 1) Chakra UI </p>
@@ -34,10 +31,13 @@
 <p> 4) React Router DOM </p>
 <p> 5) Axios </p>
 <hr/>
+<h1>I have worked on this project in a very professional manner by using GitHub branches, issues, and tasks.
+</h1>
 <h3>GitHub Branches</h3>
 <p>1) Main</p> 
 <p>2) Navbar</p>
 <p>3) Landing Page</p> 
+<p>4) Authentication </p>
 <hr/>
 <h3>Issue and Task created and completed on GitHub.</h3>
 <p>1) Navbar issue with following tasks.
@@ -50,31 +50,16 @@
 <p>2) Landing Page issue with following tasks. 
    <p> - [ ] Append Products
    <p> - [ ] Add Buttons 
+<p> 3) Authentication issue with following tasks.
+<p>                         - [ ]  Login Page Layout Only
+   <p>                      - [ ]  Initial Authentication Status Only
+ <p>                - [ ] Toggle Login Button
+ <p>                - [ ] Toggle Buy / Add to cart Buttons
+<p>                 - [ ] Toggle Cart Page
+<p>                 - [ ] Login Page Functionality
+<p>                 - [ ] Alert on wrong user information
+<p>                 - [ ] Notification on login successful
+
 <hr/>
-<h3>My Workflow during the creation of this project :</h3>
-<p> 1) Created My_Ecommerce repository in GitHub. 
-<p> 2) Cloned repository in vs code. 
-<p> 3) Created My E-Commerce project in GitHub.  
-<p> 4) Created the first Issue Navbar with the following tasks 
-    <p>     - My Name,  E-Commerce title,  Login button, ⓘ About Project, Search Icon, Cart Icon.  </p>
-<p> 5) In My E-Commerce project board in GitHub, Took the first issue Navbar in progress.
-<p> 6) Created a new branch "Navbar" in the My_Ecommerce repository.
-<p> 7) Now started working on the first issue in the Navbar branch. 
-<p> 8) Installed Chakra UI library. 
-<p> 9) Installed Chakra UI Icon library.  
-<p> 10) Importing navbar template from Chakra UI.
-<p> 11) Login button created. 
-<p> 12) Created about project link. 
-<p> 13) React icon library Installed and Cart logo added.
-<p> 14) Search logo added. 
-<p> 15) My name and title were added. 
-<p> 16) First issue is completed. 
-<p> 17) React Router DOM installed. 
-<p> 18) React Router DOM applied.
-<p> 19) React router applied.
-<p> 20) Creating the Landing Page branch in GitHub and started working on it. 
-<p> 21) Axios installed.
-<p> 22) Mapped all products on the home screen using <a target="_blank" href="https://fakestoreapi.com/"> Fake Store API</a>. 
-<p> 23) Buy now and add to cart buttons were added. 
-<hr/>
+
 <h1> Thank you for visiting my project ! </h1>
