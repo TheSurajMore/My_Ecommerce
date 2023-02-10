@@ -35,15 +35,17 @@ const About = () => {
 <p>2) Users can get all information about this project by clicking on the “ⓘ About Project” link available in Navbar.</p>
 <p>3) Anytime user can go back to the home page by clicking on the home icon present in the navbar.</p>
 <p>4) Below Navbar, we can see the products available to purchase.</p>
+<p>5) User can go to the login page using the login button available in the navbar.</p>
+<p>6) Without login users can see products available to purchase but the user cant buy or add to the cart any product without login. </p>
 </div>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
-<Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' > Functionalities and their methods of creation :</Heading>
+{/* <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' > Functionalities and their methods of creation :</Heading>
 <div align='left' >
 <p>1) This complete website is a responsive design =  I added responsiveness to this website by using chakra UI.</p> 
 <p>2) Users can Switch between dark/light mode from the navbar = I used Navbar from the Chakra UI library which has this dark/light mode functionality.</p>
 <Text>3) Products are available on the home page for buy or add to cart = All products are mapped on the home page from a dummy database <Link color={'blue'} href="https://fakestoreapi.com/" >Fake Store API</Link>.</Text>
 </div>
-<Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
+<Divider borderWidth={1} borderColor={'black'} mt={'1%'} /> */}
 <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' > Dependencies/libraries used in this project :</Heading>
 <div align='left' >
 <p> 1) Chakra UI </p>
@@ -53,11 +55,14 @@ const About = () => {
 <p> 5) Axios </p>
 </div>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
+<Heading ml={'1%'} align="left" mt={'2%'} >I have worked on this project in a very professional manner by using GitHub branches, issues, and tasks.</Heading>
+<Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' >GitHub Branches : </Heading>
 <div align='left'>
 <p>1) Main</p> 
 <p>2) Navbar</p>
 <p>3) Landing Page</p> 
+<p>4) Authentication</p>
 </div>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' >Issue and Task created and completed on GitHub.</Heading>
@@ -72,9 +77,19 @@ const About = () => {
 <p>2) Landing Page issue with following tasks.</p>
              <p>- [ ] Append Products</p>
              <p>- [ ] Add Buttons</p> 
+<p>3) Authentication issue with following tasks.</p>
+             <p>- [ ]  Login Page Layout Only</p>
+             <p>- [ ]  Initial Authentication Status Only</p>
+             <p>- [ ] Toggle Login Button</p>
+             <p>- [ ] Toggle Buy / Add to cart Buttons</p>
+             <p>- [ ] Toggle Cart Page</p>
+             <p>- [ ] Login Page Functionality</p>
+             <p>- [ ] Alert on wrong user information</p>
+             <p>- [ ] Notification on login successful</p>
+
 </div>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
-<Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' > My Workflow during the creation of this project :</Heading>
+{/* <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' > My Workflow during the creation of this project :</Heading>
 <div align='left' >
 <p> 1) Created My_Ecommerce repository in GitHub. </p>
 <p> 2) Cloned repository in vs code. </p>
@@ -101,7 +116,7 @@ const About = () => {
 <p> 22) Mapped all products on the home screen using Fake Store API. </p>
 <p> 23) Buy now and add to cart buttons were added. </p>
 </div>
-<Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
+<Divider borderWidth={1} borderColor={'black'} mt={'1%'} /> */}
 <Heading align='left' ml={'1%'} >  Thank you for visiting my project !  </Heading>
 
     </>)
