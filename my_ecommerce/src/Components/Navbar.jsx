@@ -10,7 +10,7 @@ import {
 import { SunIcon, Search2Icon, InfoIcon } from '@chakra-ui/icons';
 import {BsFillCartPlusFill, BsMoon,} from 'react-icons/bs'
 import {HiOutlineHome} from 'react-icons/hi'
-import {Link as RouteLink} from 'react-router-dom'
+import {Link as RouteLink,} from 'react-router-dom'
 import { useContext } from 'react';
 import { AuthenticationContext } from '../Contexts/Authentication';
 
