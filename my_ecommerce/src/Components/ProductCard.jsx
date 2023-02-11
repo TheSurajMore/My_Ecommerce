@@ -8,8 +8,16 @@ import {
     Image,
     Button,
     WrapItem,
-    Spacer,
+    AlertDialogOverlay,
+    AlertDialog,
+    AlertDialogContent,
+    AlertDialogHeader,
+    AlertDialogBody,
+    AlertDialogFooter,
+    useDisclosure,
   } from '@chakra-ui/react';
+import { useRef } from 'react';
+import {useNavigate} from "react-router-dom"
   
 //   const IMAGE =
 //     'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80';
@@ -17,8 +25,15 @@ import {
   export default function ProductCard(props) {
 
     const {IMAGE, title, price, description, category, rate, count} = props;
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const cancelRef = useRef();
+    const Navi = useNavigate();
+    const RedirectLogin = () =>{
+      Navi('/Login')
+    }
 
     return (
+      <>
       <Center py={12}>
         <Box
           role={'group'}
@@ -84,7 +99,7 @@ import {
               </Text>
             </Stack>
             <WrapItem experimental_spaceX={'5%'} >
-            <Button colorScheme='whatsapp'>Buy Now</Button>
+            <Button colorScheme='whatsapp' onClick={onOpen}>Buy Now</Button>
             <Button colorScheme='cyan'>Add to Cart</Button>
             </WrapItem>
             <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
@@ -93,5 +108,32 @@ import {
           </Stack>
         </Box>
       </Center>
+      <AlertDialog
+        isOpen={isOpen}
+        leastDestructiveRef={cancelRef}
+        onClose={onClose}
+      >
+        <AlertDialogOverlay>
+          <AlertDialogContent>
+            <AlertDialogHeader fontSize='lg' fontWeight='bold'>
+            Login Required !
+            </AlertDialogHeader>
+
+            <AlertDialogBody>
+            Login and enjoy "Buy" and "Add to Cart 🛒 " functionalities
+            </AlertDialogBody>
+
+            <AlertDialogFooter>
+              <Button ref={cancelRef} onClick={onClose}>
+                Cancel
+              </Button>
+              <Button colorScheme='blue' onClick={onClose&&RedirectLogin} ml={3}>
+                Login
+              </Button>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialogOverlay>
+      </AlertDialog>
+      </>
     );
   }
