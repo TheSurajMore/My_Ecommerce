@@ -1,4 +1,4 @@
-import { Heading, Divider, Flex, Spacer, Text, Badge, Link } from "@chakra-ui/react";
+import { Heading, Divider, Flex, Spacer, Text, Badge,} from "@chakra-ui/react";
 import React from "react";
 const About = () => {
     return(
