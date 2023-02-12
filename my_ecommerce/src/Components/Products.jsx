@@ -4,7 +4,7 @@ import {Grid, GridItem, extendTheme} from '@chakra-ui/react'
 import ProductCard from "./ProductCard";
 
 const Products = () => {
-
+    
     const [data, setData] = useState([]);
 
     const getData = () =>{

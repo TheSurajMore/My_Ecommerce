@@ -16,10 +16,11 @@ import {
     AlertDialogFooter,
     useDisclosure,
   } from '@chakra-ui/react';
-import { useRef } from 'react';
-import {useNavigate} from "react-router-dom"
+import { useContext, useRef } from 'react';
+import {redirect, useNavigate} from "react-router-dom"
+import { AuthenticationContext } from '../Contexts/Authentication';
   
-//   const IMAGE =
+//  const IMAGE =
 //     'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80';
   
   export default function ProductCard(props) {
@@ -28,10 +29,13 @@ import {useNavigate} from "react-router-dom"
     const { isOpen, onOpen, onClose } = useDisclosure()
     const cancelRef = useRef();
     const Navi = useNavigate();
+    const {Auth} = useContext(AuthenticationContext);
     const RedirectLogin = () =>{
-      Navi('/Login')
+        Navi('/Login')
     }
-
+    const BuyNow = () => {
+      Navi('/BuyNow')
+    }
     return (
       <>
       <Center py={12}>
@@ -99,7 +103,7 @@ import {useNavigate} from "react-router-dom"
               </Text>
             </Stack>
             <WrapItem experimental_spaceX={'5%'} >
-            <Button colorScheme='whatsapp' onClick={onOpen}>Buy Now</Button>
+            <Button colorScheme='whatsapp' onClick={Auth===false?onOpen:BuyNow}>Buy Now</Button>
             <Button colorScheme='cyan'>Add to Cart</Button>
             </WrapItem>
             <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
@@ -132,7 +136,7 @@ import {useNavigate} from "react-router-dom"
               </Button>
             </AlertDialogFooter>
           </AlertDialogContent>
-        </AlertDialogOverlay>
+        </AlertDialogOverlay>th
       </AlertDialog>
       </>
     );

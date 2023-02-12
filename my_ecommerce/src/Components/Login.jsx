@@ -287,11 +287,11 @@ import { AuthenticationContext } from '../Contexts/Authentication';
       >
         <AlertDialogOverlay>
           <AlertDialogContent>
-            <AlertDialogHeader fontSize='lg' fontWeight='bold'>
+            <AlertDialogHeader fontSize='lg' fontWeight='bold' color={'red'}>
             Login Failed
             </AlertDialogHeader>
 
-            <AlertDialogBody>
+            <AlertDialogBody color={'green'} >
             Please enter the correct Username and Password mentioned in the green section.
             </AlertDialogBody>
 
