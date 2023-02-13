@@ -17,7 +17,7 @@ import {
     useDisclosure,
   } from '@chakra-ui/react';
 import { useContext, useRef } from 'react';
-import {redirect, useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 import { AuthenticationContext } from '../Contexts/Authentication';
   
 //  const IMAGE =

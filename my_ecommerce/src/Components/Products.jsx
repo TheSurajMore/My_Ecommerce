@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import {Grid, GridItem, extendTheme} from '@chakra-ui/react'
+import {Grid, GridItem,} from '@chakra-ui/react'
 import ProductCard from "./ProductCard";
 
 const Products = () => {
@@ -23,16 +23,6 @@ const Products = () => {
     useEffect(()=>{
         getData()
     },[])
-
-    const breakpoints = {
-      sm: '320px',
-      md: '768px',
-      lg: '960px',
-      xl: '1200px',
-      '2xl': '1536px',
-    }
-
-    const theme = extendTheme({ breakpoints })
 
     return(<>
             {/* <Grid templateColumns='repeat(4, 1fr)' gap={6}> */}
