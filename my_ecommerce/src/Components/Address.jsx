@@ -25,7 +25,7 @@ const Address = () => {
       }
     
       return (<>
-      <Heading size={'md'} mt={'2%'} >Address :-</Heading>
+      <Heading size={'md'} mt={'2%'} >Address</Heading>
         <Editable
           textAlign='center'
           defaultValue='4 Tennessee Street, South Fulton, Karickohoff Hollow, United States, 38253'
