@@ -30,10 +30,10 @@ const Products = () => {
     {data && data.map((el)=>(
         <GridItem w='100%' key={el.id} >
             <ProductCard IMAGE={el.image} title={el.title} price={el.price} description={el.description} category={el.category}
-             rate={el.rating.rate} count={el.rating.count} />
+             rate={el.rating.rate} count={el.rating.count} el={el} />
         </GridItem>
     ))}
-          </Grid>
+              </Grid>
     </>)
 }
 

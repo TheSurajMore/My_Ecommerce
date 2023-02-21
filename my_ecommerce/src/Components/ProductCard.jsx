@@ -25,7 +25,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
   
   export default function ProductCard(props) {
 
-    const {IMAGE, title, price, description, category, rate, count} = props;
+    const {IMAGE, title, price, description, category, rate, count, el} = props;
     const { isOpen, onOpen, onClose } = useDisclosure()
     const cancelRef = useRef();
     const Navi = useNavigate();
@@ -35,6 +35,9 @@ import { AuthenticationContext } from '../Contexts/Authentication';
     }
     const BuyNow = () => {
       Navi('/BuyNow')
+    }
+    const show = (el) =>{
+      console.log(el)
     }
     return (
       <>
@@ -104,7 +107,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
             </Stack>
             <WrapItem experimental_spaceX={'5%'} >
             <Button colorScheme='whatsapp' onClick={Auth===false?onOpen:BuyNow}>Buy Now</Button>
-            <Button colorScheme='cyan'>Add to Cart</Button>
+            <Button colorScheme='cyan' onClick={show(el)} >Add to Cart</Button>
             </WrapItem>
             <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
               {description}
