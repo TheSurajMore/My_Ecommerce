@@ -3,6 +3,7 @@ import { Navigate,} from "react-router-dom";
 import { AuthenticationContext } from "../Contexts/Authentication";
 import Address from "./Address";
 import {Center, Select, Heading, Divider,} from '@chakra-ui/react'
+import BuyNowCard from "./BuyNowCard";
 
 const BuyNow = () => {
     const {Auth} = useContext(AuthenticationContext);
@@ -20,6 +21,8 @@ const BuyNow = () => {
     <option value='option2'>Credit Cards</option>
     </Select>
     </Center>
+    <Divider mt={'2%'} />
+    <BuyNowCard/>
         </>
 }
     </>)
