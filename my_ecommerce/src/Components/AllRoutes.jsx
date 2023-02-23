@@ -5,6 +5,7 @@ import BuyNow from "./BuyNow";
 import Cart from "./Cart";
 import Home from "./Home";
 import Login from "./Login";
+import OrderPlaced from "./OrderPlaced";
 
 const AllRoutes = () =>{
     return<Routes>
@@ -13,6 +14,7 @@ const AllRoutes = () =>{
         <Route path='/Login' element={<Login/>} ></Route>
         <Route path="/Cart" element={<Cart/>} ></Route>
         <Route path="/BuyNow" element={<BuyNow/>} ></Route>
+        <Route path="/OrderPlaced" element={<OrderPlaced/>} ></Route>
     </Routes>
 }
 

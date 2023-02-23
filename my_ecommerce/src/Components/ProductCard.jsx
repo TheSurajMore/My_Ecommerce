@@ -29,7 +29,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
     const { isOpen, onOpen, onClose } = useDisclosure()
     const cancelRef = useRef();
     const Navi = useNavigate();
-    const {Auth, setBuyNowProduct, buyNowProduct} = useContext(AuthenticationContext);
+    const {Auth, setBuyNowProduct,} = useContext(AuthenticationContext);
     const RedirectLogin = () =>{
         Navi('/Login')
     }
