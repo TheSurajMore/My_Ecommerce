@@ -1,12 +1,19 @@
-import React, { useContext } from "react";
-import { Navigate,} from "react-router-dom";
+import React, { useContext, } from "react";
+import { Navigate, useNavigate,} from "react-router-dom";
 import { AuthenticationContext } from "../Contexts/Authentication";
 import Address from "./Address";
-import {Center, Select, Heading, Divider,} from '@chakra-ui/react'
+import {Center, Select, Heading, Divider,Button, ButtonGroup,} from '@chakra-ui/react'
 import BuyNowCard from "./BuyNowCard";
 
 const BuyNow = () => {
     const {Auth} = useContext(AuthenticationContext);
+    const navi = useNavigate()
+    const cancel = () =>{
+        navi('/');
+    }
+    const placed = () =>{
+        navi('/OrderPlaced')
+    }
 
     return(<>
         { Auth===false?<Navigate to='/' replace />:
@@ -23,6 +30,10 @@ const BuyNow = () => {
     </Center>
     <Divider mt={'2%'} />
     <BuyNowCard/>
+    <ButtonGroup variant='outline' spacing='6' mb={'2%'}>
+  <Button bg={'green'} onClick={placed} >Place Order</Button>
+  <Button bg={'red'} onClick={cancel} >Cancel</Button>
+</ButtonGroup>
         </>
 }
     </>)

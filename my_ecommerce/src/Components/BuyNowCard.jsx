@@ -6,8 +6,11 @@ import {
     Text,
     Stack,
     Image,
+    HStack,
+    Divider,
+    Button,
   } from '@chakra-ui/react';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AuthenticationContext } from '../Contexts/Authentication';
   
   const IMAGE =
@@ -15,6 +18,13 @@ import { AuthenticationContext } from '../Contexts/Authentication';
   
   export default function BuyNowCard() {
     const {buyNowProduct} = useContext(AuthenticationContext)
+    const [quantity, setQuantity] = useState(1)
+    const add = () =>{
+      setQuantity(quantity+1)
+    }
+    const reduce = () =>{
+      setQuantity(quantity-1)
+    }
     return (
       <Center py={12}>
         <Box
@@ -68,7 +78,25 @@ import { AuthenticationContext } from '../Contexts/Authentication';
               <Text textDecoration={'line-through'} color={'gray.600'}>
                 $1999
               </Text>
-            </Stack>
+              </Stack>
+              <Divider height={'2'} />
+              <Text>Quantity</Text>
+              <HStack alignSelf={'center'} >
+              <Button isDisabled={quantity===1} w='40px' h='40px' bg='pink.400' color='white' fontWeight={'extrabold'} fontSize={'larger'} onClick={reduce} >
+               -
+              </Button>
+              <Center w='40px' h='40px' bg='pink.400' color='white'>
+                <Box as='span' fontWeight='bold' fontSize='lg' fontWeight={'extrabold'} >
+                {quantity}
+                </Box>
+              </Center>
+              <Button isDisabled={quantity===10} w='40px' h='40px' bg='pink.400' color='white' fontWeight={'extrabold'} fontSize={'larger'} onClick={add}>
+                +
+              </Button>
+              </HStack>
+              <Text fontWeight={800} fontSize={'xl'} >
+               Total Amount= ${buyNowProduct.price*quantity}
+              </Text>
           </Stack>
         </Box>
       </Center>
