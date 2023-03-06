@@ -28,7 +28,7 @@ const About = () => {
    <Spacer/>
    <a href="https://fakestoreapi.com/" target="_blank" rel="noreferrer"> <img src="https://fakestoreapi.com/icons/logo.png" alt="Fake Store API" width="40" height="50"/> </a> 
 </Flex>
-<Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
+{/* <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 <Heading align='left' ml={'1%'}  mt={'1%'} as={'h3'} size={'md'} > Step-by-step procedure to explore all functionalities of this project :</Heading>
 <div align='left' >
 <Text>1) After landing on this website users can switch between dark and light modes by clicking on the moon ☾ icon available in the navbar.</Text>
@@ -37,7 +37,7 @@ const About = () => {
 <p>4) Below Navbar, we can see the products available to purchase.</p>
 <p>5) User can go to the login page using the login button available in the navbar.</p>
 <p>6) Without login users can see products available to purchase but the user cant buy or add to the cart any product without login. </p>
-</div>
+</div> */}
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 {/* <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' > Functionalities and their methods of creation :</Heading>
 <div align='left' >
@@ -54,6 +54,8 @@ const About = () => {
 <p> 4) React Router DOM</p>
 <p> 5) Axios </p>
 </div>
+<Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
+<Text mt={'1%'} >70% to 80% project is done. Cart and some other functionalities are in progress. </Text>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 <Heading ml={'1%'} align="left" mt={'2%'} >I have worked on this project in a very professional manner by using GitHub branches, issues, and tasks.</Heading>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />

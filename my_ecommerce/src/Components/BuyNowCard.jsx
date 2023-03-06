@@ -86,7 +86,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
                -
               </Button>
               <Center w='40px' h='40px' bg='pink.400' color='white'>
-                <Box as='span' fontWeight='bold' fontSize='lg' fontWeight={'extrabold'} >
+                <Box as='span' fontSize='lg' fontWeight={'extrabold'} >
                 {quantity}
                 </Box>
               </Center>

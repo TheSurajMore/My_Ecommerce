@@ -105,11 +105,11 @@ import { AuthenticationContext } from '../Contexts/Authentication';
             </Stack>
             <WrapItem experimental_spaceX={'5%'} >
             <Button colorScheme='whatsapp' onClick={Auth===false?onOpen:BuyNow}>Buy Now</Button>
-            <Button colorScheme='cyan'>Add to Cart</Button>
+            {/* <Button colorScheme='cyan'>Add to Cart</Button> */}
             </WrapItem>
-            <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
+            {/* <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
               {description}
-            </Text>
+            </Text> */}
           </Stack>
         </Box>
       </Center>
