@@ -7,8 +7,8 @@ import {
   useColorMode,
   Heading,
 } from '@chakra-ui/react';
-import { SunIcon, Search2Icon, InfoIcon } from '@chakra-ui/icons';
-import {BsFillCartPlusFill, BsMoon,} from 'react-icons/bs'
+import { SunIcon, InfoIcon } from '@chakra-ui/icons';
+import { BsMoon,} from 'react-icons/bs'
 import {HiOutlineHome} from 'react-icons/hi'
 import {Link as RouteLink,} from 'react-router-dom'
 import { useContext } from 'react';
@@ -79,8 +79,8 @@ export default function Navbar() {
                 </MenuList>
               </Menu> */}
               <Box alignSelf={'center'} ><RouteLink to={'/'}><HiOutlineHome size={'30px'}></HiOutlineHome></RouteLink></Box>
-              <Box alignSelf={'center'} ><Search2Icon  boxSize={6} ></Search2Icon></Box>
-              <Box alignSelf={'center'}><RouteLink to={'/Cart'} ><BsFillCartPlusFill size={'30px'} ></BsFillCartPlusFill></RouteLink></Box>
+              {/* <Box alignSelf={'center'} ><Search2Icon  boxSize={6} ></Search2Icon></Box> */}
+              {/* <Box alignSelf={'center'}><RouteLink to={'/Cart'} ><BsFillCartPlusFill size={'30px'} ></BsFillCartPlusFill></RouteLink></Box> */}
               <Box alignSelf={'center'}><RouteLink to={'/Login'} ><Button onClick={Logout} colorScheme='blue' size='sm' >
                 {Auth===false?"Login":"Logout"}
                 </Button></RouteLink></Box>
