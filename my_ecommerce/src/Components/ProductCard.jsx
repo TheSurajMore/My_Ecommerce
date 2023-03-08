@@ -84,7 +84,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
             <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
              {category}
             </Text>
-            <Stack direction={'row'} align={'center'} bg={rate>4?'green.500':rate<4&&rate>3?'yellow.500':'red.600'} >
+            <Stack direction={'row'} align={'center'} bg={rate>=4?'green.500':rate<4&&rate>=3?'yellow.500':'red.600'} >
               <Text fontWeight={800} fontSize={'xl'}>
               Rating : {rate}/5
               </Text>
@@ -127,7 +127,6 @@ import { AuthenticationContext } from '../Contexts/Authentication';
             <AlertDialogBody>
             Login and enjoy "Buy" and "Add to Cart 🛒 " functionalities
             </AlertDialogBody>
-
             <AlertDialogFooter>
               <Button ref={cancelRef} onClick={onClose}>
                 Cancel
