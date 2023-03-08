@@ -8,7 +8,7 @@ import {
   Heading,
 } from '@chakra-ui/react';
 import { SunIcon, InfoIcon } from '@chakra-ui/icons';
-import { BsMoon,} from 'react-icons/bs'
+import { BsMoon, BsFillCartPlusFill } from 'react-icons/bs'
 import {HiOutlineHome} from 'react-icons/hi'
 import {Link as RouteLink,} from 'react-router-dom'
 import { useContext } from 'react';
@@ -36,16 +36,16 @@ export default function Navbar() {
   // const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} >
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={7} >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>My E-Commerce Project</Box>
+          <Box>Suraj's E-Commerce Project</Box>
 
-          <Box><Heading>Suraj More</Heading></Box>
+          {/* <Box><Heading>Suraj More</Heading></Box> */}
 
           <Flex alignItems={'center'}>
-            <Stack direction={'row'} spacing={7}>
-            <Button onClick={toggleColorMode}>   
-                {colorMode === 'light' ? <BsMoon size={'27px'} /> : <SunIcon/>}
+            <Stack direction={'row'} spacing={2}>
+              <Button alignSelf={'center'} onClick={toggleColorMode}>   
+                {colorMode === 'light' ? <BsMoon size={'27px'}  /> : <SunIcon />}
             </Button>
               {/* <Menu>
                 <MenuButton
@@ -80,11 +80,11 @@ export default function Navbar() {
               </Menu> */}
               <Box alignSelf={'center'} ><RouteLink to={'/'}><HiOutlineHome size={'30px'}></HiOutlineHome></RouteLink></Box>
               {/* <Box alignSelf={'center'} ><Search2Icon  boxSize={6} ></Search2Icon></Box> */}
-              {/* <Box alignSelf={'center'}><RouteLink to={'/Cart'} ><BsFillCartPlusFill size={'30px'} ></BsFillCartPlusFill></RouteLink></Box> */}
+              <Box alignSelf={'center'}><RouteLink to={'/Cart'} ><BsFillCartPlusFill size={'30px'} ></BsFillCartPlusFill></RouteLink></Box>
               <Box alignSelf={'center'}><RouteLink to={'/Login'} ><Button onClick={Logout} colorScheme='blue' size='sm' >
                 {Auth===false?"Login":"Logout"}
                 </Button></RouteLink></Box>
-              <Box alignSelf={'center'} color='green' fontWeight={'bold'} ><RouteLink to={'/About'}><InfoIcon boxSize={6} /> About Project</RouteLink></Box>
+              <Box alignSelf={'center'} color='green' fontWeight={'bold'} ><RouteLink to={'/About'}><InfoIcon boxSize={6} /> About Project</RouteLink></Box> 
             </Stack>
           </Flex>
         </Flex>
