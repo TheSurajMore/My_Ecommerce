@@ -33,19 +33,19 @@ export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   console.log(Auth);
 
-  // const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { isOpen, onOpen, onClose } = useDisclosure(); 39 px={5}
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={7} >
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>Suraj's E-Commerce Project</Box>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} >
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'} mr={'2%'} >
+          <Box ml={'0.2%'}>Suraj's E-Commerce Project</Box>
 
           {/* <Box><Heading>Suraj More</Heading></Box> */}
 
           <Flex alignItems={'center'}>
-            <Stack direction={'row'} spacing={2}>
-              <Button alignSelf={'center'} onClick={toggleColorMode}>   
-                {colorMode === 'light' ? <BsMoon size={'27px'}  /> : <SunIcon />}
+            <Stack direction={'row'} spacing={3}>
+              <Button alignSelf={'center'} onClick={toggleColorMode} px={'-8%'} >   
+                {colorMode === 'light' ? <BsMoon size={'25px'}/> : <SunIcon />}
             </Button>
               {/* <Menu>
                 <MenuButton
