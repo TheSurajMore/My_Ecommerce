@@ -1,5 +1,5 @@
 import React from "react";
-import {useEditableControls,IconButton,ButtonGroup,Flex,Editable,EditablePreview,
+import {useEditableControls,IconButton,ButtonGroup,Flex,Editable,EditablePreview, 
         Input,EditableInput, Heading} from '@chakra-ui/react'
 import {CheckIcon,CloseIcon,EditIcon,} from '@chakra-ui/icons'
 

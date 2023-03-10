@@ -28,7 +28,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
   //   {
   //     name: 'Ryan Florence',
   //     url: 'https://bit.ly/ryan-florence',
-  //   },
+  //   }, 
   //   {
   //     name: 'Segun Adebayo',
   //     url: 'https://bit.ly/sage-adebayo',
@@ -134,7 +134,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
               </Text>{' '}
               password
             </Heading>
-            <Box bg={'green'} fontWeight='bold' borderRadius={100}>
+            <Box bg={'green'} fontWeight='bold' borderRadius={100} >
               <Text> Username = Suraj More </Text>
               <Text> Password = React project </Text>
             </Box>

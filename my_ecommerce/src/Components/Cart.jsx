@@ -6,7 +6,7 @@ import {
   Heading,
   Text,
   Image,
-  IconButton,
+  IconButton, 
   useToast,
   AlertIcon,
   Alert,
@@ -14,30 +14,32 @@ import {
 } from "@chakra-ui/react";
 import { AiFillDelete } from "react-icons/ai";
 import { AuthenticationContext } from "../Contexts/Authentication";
+import { useNavigate } from "react-router-dom";
 
 
-const cartItems = [
-  {
-    id: 1,
-    name: "Chakra UI T-Shirt",
-    price: 25.0,
-    imageUrl: "https://via.placeholder.com/150",
-  },
-  {
-    id: 2,
-    name: "Chakra UI Mug",
-    price: 15.0,
-    imageUrl: "https://via.placeholder.com/150",
-  },
-];
+// const cartItems = [
+//   {
+//     id: 1,
+//     name: "Chakra UI T-Shirt",
+//     price: 25.0,
+//     imageUrl: "https://via.placeholder.com/150",
+//   },
+//   {
+//     id: 2,
+//     name: "Chakra UI Mug",
+//     price: 15.0,
+//     imageUrl: "https://via.placeholder.com/150",
+//   },
+// ];
 
 const Cart = () => {
-  const [items, setItems] = useState(cartItems);
+  const {Auth, cart, setCart} = useContext(AuthenticationContext)
+  const [items, setItems] = useState(cart);
   const toast = useToast();
-  const {Auth} = useContext(AuthenticationContext)
+  const navi = useNavigate();
 
   const handleRemoveItem = (itemId) => {
-    setItems(items.filter((item) => item.id !== itemId));
+    setCart(cart.filter((item) => item.id !== itemId));
     toast({
       title: "Item removed from cart",
       status: "success",
@@ -46,20 +48,22 @@ const Cart = () => {
     });
   };
 
-  const totalPrice = items.reduce((acc, item) => acc + item.price, 0);
+  const placed = () =>{
+    navi('/OrderPlaced')
+    setCart([]);
+}
 
+  const totalPrice = cart.reduce((acc, item) => acc + item.price, 0);
   return (<>
     {Auth===false?<Center><Box width={'50%'} >
         <Alert mt={'5%'} status='error' ><AlertIcon/>You need to log in to access cart.</Alert>
                   </Box></Center>:
-                  cartItems.length===0?<Center><Box>
+                  cart.length===0?<Center><Box>
                     <Image src="CartIsEmpty.jpg" ></Image>
                   </Box></Center> :
-    <Box py="4">
-      <Heading as="h1" mb="4">
-        Shopping Cart
-      </Heading>
-      {items.map((item) => (
+    <Center>
+    <Box py="4" width={'70%'}>
+      {cart.map((item) => (
         <Flex
           key={item.id}
           bg="white"
@@ -68,11 +72,11 @@ const Cart = () => {
           p="4"
           mb="4"
         >
-          <Image src={item.imageUrl} alt={item.name} mr="4" />
-          <Box>
-            <Heading as="h2" fontSize="lg" mb="2">
-              {item.name}
-            </Heading>
+          <Image src={item.image} alt={item.title} mr="4" width={'70px'}/>
+          <Box paddingLeft={'5%'} >
+            {/* <Heading as="h2" fontSize="lg" mb="2" width={'100%'} >
+              {item.title}
+            </Heading> */}
             <Text fontSize="md" color="gray.600">
               ${item.price.toFixed(2)}
             </Text>
@@ -86,22 +90,26 @@ const Cart = () => {
               onClick={() => handleRemoveItem(item.id)}
             />
           </Box>
+          <Box paddingLeft={'5%'}>
+          <Heading as="h2" fontSize="lg" mb="2" >
+              {item.title}
+            </Heading>
+          </Box>
         </Flex>
       ))}
       {items.length === 0 && (
-        <Text fontSize="md" color="gray.600">
-          Your cart is empty
-        </Text>
+        <Center><Image src="CartIsEmpty.jpg" ></Image></Center>
       )}
       {items.length > 0 && (
         <Box bg="white" boxShadow="md" borderRadius="md" p="4">
           <Heading as="h2" fontSize="lg" mb="4">
             Total: ${totalPrice.toFixed(2)}
           </Heading>
-          <Button colorScheme="blue">Checkout</Button>
+          <Button colorScheme="blue" onClick={placed} >Checkout</Button>
         </Box>
       )}
     </Box>
+    </Center>
 }
     </>
   );

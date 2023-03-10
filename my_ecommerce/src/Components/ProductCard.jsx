@@ -15,6 +15,7 @@ import {
     AlertDialogBody,
     AlertDialogFooter,
     useDisclosure,
+    useToast,
   } from '@chakra-ui/react';
 import { useContext, useRef } from 'react';
 import {useNavigate} from "react-router-dom"
@@ -25,11 +26,12 @@ import { AuthenticationContext } from '../Contexts/Authentication';
   
   export default function ProductCard(props) {
 
-    const {IMAGE, title, price, description, category, rate, count, el,} = props;
+    const {IMAGE, title, price, category, rate, count, el,} = props;
     const { isOpen, onOpen, onClose } = useDisclosure()
     const cancelRef = useRef();
     const Navi = useNavigate();
-    const {Auth, setBuyNowProduct,} = useContext(AuthenticationContext);
+    const {Auth, setBuyNowProduct, cart, setCart} = useContext(AuthenticationContext);
+    const toast = useToast();
     const RedirectLogin = () =>{
         Navi('/Login')
     }
@@ -37,6 +39,32 @@ import { AuthenticationContext } from '../Contexts/Authentication';
       Navi('/BuyNow')
       setBuyNowProduct(el)
         }
+
+    const addToCart = () =>{
+      let count =0;
+      for(let x=0; x<cart.length; x++){
+        if(cart[x].id===el.id){ 
+          count=count+1;
+          toast({
+            title:"Item is already added to the cart.",
+            status: "warning",
+            duration: 2000,
+            isClosable: true,
+          });
+        }
+      }
+      if(count===0){
+        
+      setCart([...cart,{...el,count:1}])
+      toast({
+        title: "Item added to the cart.",
+        status: "success",
+        duration: 2000,
+        isClosable: true,
+      });
+    }
+  }
+    console.log(cart)
     return (
       <>
       <Center py={12}>
@@ -105,7 +133,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
             </Stack>
             <WrapItem experimental_spaceX={'5%'} >
             <Button colorScheme='whatsapp' onClick={Auth===false?onOpen:BuyNow}>Buy Now</Button>
-            {/* <Button colorScheme='cyan'>Add to Cart</Button> */}
+            <Button colorScheme='cyan' onClick={Auth===false?onOpen:addToCart} >Add to Cart</Button>
             </WrapItem>
             {/* <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
               {description}
@@ -120,12 +148,12 @@ import { AuthenticationContext } from '../Contexts/Authentication';
       >
         <AlertDialogOverlay>
           <AlertDialogContent>
-            <AlertDialogHeader fontSize='lg' fontWeight='bold'>
+            <AlertDialogHeader fontSize='lg' fontWeight='bold' color={'red'} >
             Login Required !
             </AlertDialogHeader>
 
-            <AlertDialogBody>
-            Login and enjoy "Buy" and "Add to Cart 🛒 " functionalities
+            <AlertDialogBody color={'green'} >
+            Login and enjoy "Buy" and "Add to Cart 🛒 " functionalities.
             </AlertDialogBody>
             <AlertDialogFooter>
               <Button ref={cancelRef} onClick={onClose}>
