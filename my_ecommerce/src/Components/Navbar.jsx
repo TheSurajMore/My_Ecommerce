@@ -5,7 +5,6 @@ import {
   useColorModeValue,
   Stack,
   useColorMode,
-  Heading,
 } from '@chakra-ui/react';
 import { SunIcon, InfoIcon } from '@chakra-ui/icons';
 import { BsMoon, BsFillCartPlusFill } from 'react-icons/bs'
@@ -57,7 +56,7 @@ export default function Navbar() {
                   <Avatar
                     size={'sm'}
                     src={'https://avatars.dicebear.com/api/male/username.svg'}
-                  />
+                  /> 
                 </MenuButton>
                 <MenuList alignItems={'center'}>
                   <br />

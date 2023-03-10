@@ -1,7 +1,7 @@
 import React, { useContext, } from "react";
 import { Navigate, useNavigate,} from "react-router-dom";
 import { AuthenticationContext } from "../Contexts/Authentication";
-import Address from "./Address";
+import Address from "./Address"; 
 import {Center, Select, Heading, Divider,Button, ButtonGroup,} from '@chakra-ui/react'
 import BuyNowCard from "./BuyNowCard";
 

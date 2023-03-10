@@ -3,7 +3,7 @@ import {
     Center,
     useColorModeValue,
     Heading,
-    Text,
+    Text, 
     Stack,
     Image,
     HStack,
