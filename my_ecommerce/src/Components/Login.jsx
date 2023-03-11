@@ -58,7 +58,7 @@ import { AuthenticationContext } from '../Contexts/Authentication';
         title: 'Login Successful !',
         description: "Enjoy Buy and Add to Cart 🛒 functionalities!",
         status: 'success',
-        duration: 5000,
+        duration: 3000,
         isClosable: true,
       })
     }

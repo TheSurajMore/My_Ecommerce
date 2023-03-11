@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} >
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'} mr={'2%'} >
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'} mr={'2%'} paddingTop={'0.5%'} paddingBottom={'0.5%'}  height={'-webkit-fit-content'} >
           <Box ml={'0.2%'}>Suraj's E-Commerce Project</Box>
 
           {/* <Box><Heading>Suraj More</Heading></Box> */}

@@ -1,5 +1,5 @@
 import React from "react";
-import {Alert, AlertIcon, AlertTitle, AlertDescription, Center, Button, Divider,} from '@chakra-ui/react'
+import {Alert, AlertIcon, AlertTitle, AlertDescription, Button, Divider,} from '@chakra-ui/react'
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 
@@ -10,8 +10,9 @@ const home = () =>{
 }
     return(
  <>
- <Center mt={'10%'} >
  <Alert 
+  ml={'15%'}
+  mt={'10%'}
   status='success'
   variant='subtle'
   flexDirection='column'
@@ -29,12 +30,11 @@ const home = () =>{
   <AlertDescription maxWidth='sm'>
   Thank you for shopping; your order will be delivered shortly.
   </AlertDescription>
-  <Divider mt={'5%'} />
+  <Divider mt={'2.5%'} width={'50%'} mb={'2.5%'} />
   <Button onClick={home} rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
 Continue shopping
   </Button>
 </Alert>
-</Center>
         </>
     );
 }

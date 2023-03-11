@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import {Alert, AlertIcon, Grid, GridItem, Box, Center, Stack, Spinner} from '@chakra-ui/react'
+import {Alert, AlertIcon, Grid, GridItem, Box, Center, Stack, Spinner, Link} from '@chakra-ui/react'
 import ProductCard from "./ProductCard";
 
 const Products = () => {
@@ -38,7 +38,7 @@ const Products = () => {
   :
   data===0?<Center><Box width={'50%'}>
                <Alert mt={'5%'} status='success' ><AlertIcon/>Everything is looking good in the project.</Alert>
-               <Alert status='error' ><AlertIcon/>but the problem is from the backend.</Alert>
+               <Alert status='error' ><AlertIcon/>But the problem is from the backend.<h1>(<Link color={'blue'} href="https://fakestoreapi.com/" target={'_blank'} rel="noreferrer" >fake store API</Link>)</h1></Alert>
                <Alert status="loading" ><AlertIcon/>Try after some time. </Alert>
                </Box></Center>
                :

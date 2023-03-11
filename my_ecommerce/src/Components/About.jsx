@@ -66,16 +66,18 @@ const About = () => {
 <p>⦿ Using the buy now option user can directly buy or direct checkout with the respective product. </p>
 <p>⦿ Using add to cart functionality user can add multiple products into the cart and then checkout them together.</p> 
 <p>⦿ User can not buy or add to cart products without logging in. </p>
-<p>⦿ User can change the quantity or remove product during checkout.</p> 
+<p>⦿ User can remove products from cart during checkout.</p> 
 <p>⦿ If the rating of a product is more than or equal to 4 it is showing in green color, if it is more than or equal to 3 and less than 4 it is showing in yellow color, and if less than 3 then it is showing in the red color. </p>
 <p>⦿ User will get notifications or alerts on the following activities.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;- If the user tries to buy or add to cart product without login then the user will get an alert to log in first. And alert itself has the option to go to the login page.</p> 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;- If the user enters wrong username or password it will show an alert and guide for the correct username and password. </p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;- The user will get the notification on login successful. </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;- User will get a notification after the user add a product to the cart. </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;- User will get a notification if the user tries to add the same product again. </p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;- User will get the notification of the order placed and from their user can go back to the home page.</p> 
 </Box>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
-< Heading ml={'1%'} as={'h3'} size='md' mt={'1%'} align="left">I have worked on this project in a very professional manner by using GitHub branches, issues, and tasks.</Heading>
+< Heading ml={'1%'} as={'h3'} size='md' mt={'1%'} align="left">I have worked on this project in a very professional manner by using Git, GitHub branches, issues, and tasks.</Heading>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 {/* <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' >GitHub Branches : </Heading>
 <div align='left'>
@@ -137,7 +139,7 @@ const About = () => {
 <p> 23) Buy now and add to cart buttons were added. </p>
 </div>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} /> */}
-<Heading align='left' ml={'1%'} >  Thank you for visiting my project !  </Heading>
+<Heading mb={'2%'} align='left' ml={'1%'} >  Thank you for visiting my project ! 😊 </Heading>
 
     </>)
 

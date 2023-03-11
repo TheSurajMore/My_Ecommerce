@@ -15,6 +15,8 @@ import {
 import { AiFillDelete } from "react-icons/ai";
 import { AuthenticationContext } from "../Contexts/Authentication";
 import { useNavigate } from "react-router-dom";
+import {Link as RouteLink,} from 'react-router-dom'
+
 
 
 // const cartItems = [
@@ -56,28 +58,29 @@ const Cart = () => {
   const totalPrice = cart.reduce((acc, item) => acc + item.price, 0);
   return (<>
     {Auth===false?<Center><Box width={'50%'} >
-        <Alert mt={'5%'} status='error' ><AlertIcon/>You need to log in to access cart.</Alert>
-                  </Box></Center>:
+        <Alert mt={'5%'} status='error' ><AlertIcon/>You need to log in to access cart.
+        <Box ml={'5%'} alignSelf={'center'}><RouteLink to={'/Login'} ><Button colorScheme='blue' size='sm' >Login</Button></RouteLink></Box>
+                </Alert></Box></Center>:
                   cart.length===0?<Center><Box>
-                    <Image src="CartIsEmpty.jpg" ></Image>
+                    <Image src="CartIsEmpty.jpg"></Image>
                   </Box></Center> :
     <Center>
-    <Box py="4" width={'70%'}>
+    <Box py="4" width={'70%'} >
       {cart.map((item) => (
         <Flex
           key={item.id}
-          bg="white"
+          // bg="white"
           boxShadow="md"
           borderRadius="md"
           p="4"
           mb="4"
         >
-          <Image src={item.image} alt={item.title} mr="4" width={'70px'}/>
+          <Image src={item.image} alt={item.title} mr="4" width={'70px'} />
           <Box paddingLeft={'5%'} >
             {/* <Heading as="h2" fontSize="lg" mb="2" width={'100%'} >
               {item.title}
             </Heading> */}
-            <Text fontSize="md" color="gray.600">
+            <Text fontSize="md" >
               ${item.price.toFixed(2)}
             </Text>
             <IconButton
@@ -101,7 +104,7 @@ const Cart = () => {
         <Center><Image src="CartIsEmpty.jpg" ></Image></Center>
       )}
       {items.length > 0 && (
-        <Box bg="white" boxShadow="md" borderRadius="md" p="4">
+        <Box boxShadow="md" borderRadius="md" p="4">
           <Heading as="h2" fontSize="lg" mb="4">
             Total: ${totalPrice.toFixed(2)}
           </Heading>
