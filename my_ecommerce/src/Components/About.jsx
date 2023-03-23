@@ -28,9 +28,7 @@ const About = () => {
    <Spacer/>
    <a href="https://fakestoreapi.com/" target="_blank" rel="noreferrer"> <img src="https://fakestoreapi.com/icons/logo.png" alt="Fake Store API" width="40" height="50"/> </a> 
 </Flex>
-{/* <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
-<Heading align='left' ml={'1%'}  mt={'1%'} as={'h3'} size={'md'} > Step-by-step procedure to explore all functionalities of this project :</Heading>
-<div align='left' >
+{/* 
 <Text>1) After landing on this website users can switch between dark and light modes by clicking on the moon ☾ icon available in the navbar.</Text>
 <p>2) Users can get all information about this project by clicking on the “ⓘ About Project” link available in Navbar.</p>
 <p>3) Anytime user can go back to the home page by clicking on the home icon present in the navbar.</p>
