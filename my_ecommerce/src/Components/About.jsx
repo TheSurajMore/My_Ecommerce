@@ -29,13 +29,6 @@ const About = () => {
    <a href="https://fakestoreapi.com/" target="_blank" rel="noreferrer"> <img src="https://fakestoreapi.com/icons/logo.png" alt="Fake Store API" width="40" height="50"/> </a> 
 </Flex>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
-{/* <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' > Functionalities and their methods of creation :</Heading>
-<div align='left' >
-<p>1) This complete website is a responsive design =  I added responsiveness to this website by using chakra UI.</p> 
-<p>2) Users can Switch between dark/light mode from the navbar = I used Navbar from the Chakra UI library which has this dark/light mode functionality.</p>
-<Text>3) Products are available on the home page for buy or add to cart = All products are mapped on the home page from a dummy database <Link color={'blue'} href="https://fakestoreapi.com/" >Fake Store API</Link>.</Text>
-</div>
-<Divider borderWidth={1} borderColor={'black'} mt={'1%'} /> */}
 {/* <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' > Dependencies/libraries used in this project :</Heading>
 <div align='left' >
 <p> 1) Chakra UI </p>
