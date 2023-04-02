@@ -29,14 +29,6 @@ const About = () => {
    <a href="https://fakestoreapi.com/" target="_blank" rel="noreferrer"> <img src="https://fakestoreapi.com/icons/logo.png" alt="Fake Store API" width="40" height="50"/> </a> 
 </Flex>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
-{/* <Heading as={'h3'} ml='1%' size='md' mt={'1%'} align='left' > Dependencies/libraries used in this project :</Heading>
-<div align='left' >
-<p> 1) Chakra UI </p>
-<p> 2) Chakra UI / Icons </p>
-<p> 3) React icons </p>
-<p> 4) React Router DOM</p>
-<p> 5) Axios </p>
-</div> */}
 {/* <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
 <Text mt={'1%'} >70% to 80% project is done. Cart and some other functionalities are in progress. </Text> */}
     {/* <Divider borderWidth={1} borderColor={'black'} mt={'1%'} /> */}
