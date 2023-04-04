@@ -29,9 +29,6 @@ const About = () => {
    <a href="https://fakestoreapi.com/" target="_blank" rel="noreferrer"> <img src="https://fakestoreapi.com/icons/logo.png" alt="Fake Store API" width="40" height="50"/> </a> 
 </Flex>
 <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
-{/* <Divider borderWidth={1} borderColor={'black'} mt={'1%'} />
-<Text mt={'1%'} >70% to 80% project is done. Cart and some other functionalities are in progress. </Text> */}
-    {/* <Divider borderWidth={1} borderColor={'black'} mt={'1%'} /> */}
 < Heading ml={'1%'} as={'h3'} size='md' mt={'1%'} align="left">The user can experience the following functionalities or features in this project :-</Heading>
 <Box textAlign={'left'} ml={'1%'}  >
 <p>⦿ User can switch between dark and light mode.</p>
